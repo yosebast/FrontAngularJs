@@ -1,0 +1,26 @@
+<h3>User Registration Form</h3>
+	<form ng-submit="">
+		<div class="table-responsive">
+			<table class="table table-bordered" style="width: 600px">
+				
+				<tr>
+					<td colspan="2"><input type="submit"
+						class="btn btn-primary btn-sm" ng-click="listadoImagenes()"
+						value="ListadoImagenes" /></td>
+				</tr>
+				
+				
+			</table>
+		</div>
+	</form>
+	<h3>Registered Users</h3>
+	<div class="table-responsive">
+		<table class="table table-bordered" style="width: 600px">
+			
+			
+			 <div ng-repeat="imagen in datosComp">				
+			<img data-ng-src="data:image/jpg;base64,{{imagen.body}}"/>				
+			</div>
+			
+		</table>
+	</div>
