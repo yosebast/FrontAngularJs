@@ -10,7 +10,7 @@
 
 	angular.module('frontAngularJsApp').controller('MainCtrl', ['$scope', 'ImageService', function($scope, ImageService) {  
 
-		$scope.datosComp = [];
+	$scope.datosComp = [];
     fetchAllUsers();
 
     function fetchAllUsers(){

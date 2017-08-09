@@ -8,22 +8,9 @@
  *
  * Main module of the application.
  */
-	angular.module('frontAngularJsApp').controller('ContactCtrl', ['$scope', 'ImageService', function($scope, ImageService) {  
+	angular.module('frontAngularJsApp').controller('ContactCtrl', function($scope, $http) {  
 
 
-    fetchAllUsers();
-
-    function fetchAllUsers(){
-        ImageService.fetchAllImages()
-            .then(
-            function(d) {
-               $scope.datosComp= d;
-            },
-            function(errResponse){
-                console.error('Error while fetching Users');
-            }
-        );
-    }
 
 
-}]);
+});
